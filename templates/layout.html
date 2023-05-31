@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BULBS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles.css') }}">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">TEXT TO BINARY</a></li>
+          <li><a href="/decode">BINARY TO TEXT</a></li>
+          <li><a href="/counter">BINARY COUNTER</a></li>
+          <li><a href="/about">ABOUT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content">
+      {% block content %}{% endblock %}
+    </div>
+  </body>
+</html>
