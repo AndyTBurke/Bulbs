@@ -5,11 +5,16 @@
     <p>Turn a text message into a pattern of bulbs, 
         and learn a little bit about binary along the way.</p>
     <form method="post">
-        <textarea 
+        <textarea
+            maxlength="1000" 
             autofocus name="message" 
             placeholder="Write a message"></textarea>
         <button>OUTPUT TO BINARY</button>
     </form>
-    <p>{{message}}</p>
+    {% if message %}
+    <button id="copy-btn">COPY BINARY TO CLIPBOARD</button>
+    <div class="message-div" id="binary-message">{{message}}</div>
+    <script src="{{ url_for('static', filename='/index.js') }}"></script>
+    {% endif %}
     
 {% endblock %}
