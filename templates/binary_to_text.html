@@ -3,10 +3,11 @@
 {% block content %}
     <h1>💡 DECODE 💡</h1>
     <p>Did someone send you some binary text? Decode it here!</p>
-    <form>
+    <form method="post">
         <textarea 
             autofocus name="message" 
             placeholder="Input binary message"></textarea>
-        <button>OUTPUT TO BINARY</button>
+        <button>OUTPUT TO PLAIN TEXT</button>
     </form>
+    <p>{{message}}</p>
 {% endblock %}

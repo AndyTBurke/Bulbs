@@ -4,11 +4,12 @@
     <h1>💡 BULBS 💡</h1>
     <p>Turn a text message into a pattern of bulbs, 
         and learn a little bit about binary along the way.</p>
-    <form>
+    <form method="post">
         <textarea 
             autofocus name="message" 
             placeholder="Write a message"></textarea>
         <button>OUTPUT TO BINARY</button>
     </form>
+    <p>{{message}}</p>
     
 {% endblock %}
