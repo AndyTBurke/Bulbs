@@ -97,3 +97,13 @@ form {
 #copy-btn:active {
     background-color: #b39d13;
   }
+
+.external-link {
+    text-decoration: none;
+    color: #5f5f5f;
+    font-weight: bold;
+  }
+
+.external-link:hover {
+    color: #b39d13;
+}
