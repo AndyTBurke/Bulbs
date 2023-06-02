@@ -30,8 +30,11 @@ def decode():
         message_binary = request.form.get("message").replace("🟡", "1").replace("⚫", "0")
         message_binary_arr = message_binary.split(" ")
         message_unicode_arr = []
-        for binary in message_binary_arr:
-            message_unicode_arr.append(int(binary, 2))
+        try: 
+            for binary in message_binary_arr:
+                message_unicode_arr.append(int(binary, 2))
+        except ValueError:
+            return render_template("binary_to_text.html", error="Error: invalad characters in message field")
         message_letter_arr = []
         for unicode in message_unicode_arr:
             message_letter_arr.append(chr(unicode))

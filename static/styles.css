@@ -139,3 +139,8 @@ form {
     text-align: center;
     margin: .5em 0;
 }
+
+.error-message {
+    color:#b30303;
+    font-weight: bold;
+}
