@@ -87,6 +87,7 @@ form {
     cursor: pointer;
     transition: background-color .5s ease-in-out;
     transition: color .5s ease-in-out;
+    width: 20em;
 }
 
 #copy-btn:hover {
