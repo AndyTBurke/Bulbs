@@ -43,7 +43,7 @@ nav > ul > li {
 h1 {
     font-family: monospace, sans-serif;
     font-size: 5em;
-    margin: .5em 0;
+    margin: .5em 0 0 0;
 }
 
 textarea {
@@ -60,9 +60,10 @@ form {
     align-items: center;
 }
 
-#about-info {
+.text-container {
     width: 70%;
     max-width: 40em;
+    margin-bottom: 1em;
 }
 
 .message-div {
@@ -107,4 +108,34 @@ form {
 
 .external-link:hover {
     color: #b39d13;
+}
+
+.interactive-learn-el {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    background-color: lightgray;
+}
+
+.interactive-learn-el h4 {
+    margin: 0;
+}
+
+.interactive-learn-el button {
+    margin-top: .5em;
+    cursor: pointer;
+    padding: .5em 1em;
+    font-weight: bold;
+}
+
+.interactive-learn-el input {
+    width: 1em;
+    padding: 1em;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin: .5em 0;
 }

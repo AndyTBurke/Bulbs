@@ -2,5 +2,48 @@
 
 {% block content %}
     <h1>💡 HOW IT WORKS 💡</h1>
-    <p>This is the content of the counter page.</p>
+    <p>To understand how this app works, you need to understand two things: <strong>Binary</strong> and <strong>Unicode</strong></p>
+    <div class="text-container">
+        <h2>What is binary?</h2>
+        <p>
+            Binary is a way of counting or representing numbers using only two symbols: 0 and 1. 
+            In our everyday decimal system (a.k.a. base-10), we have ten symbols (0, 1, 2, 3, 4, 5, 6, 7, 8, 9), but in binary, we use 
+            just two symbols. It's like having a special code where the only numbers are 0 and 1. 
+            We can think of it as a lightbulb being either off (⚫) or on (🟡).
+        </p>
+        <div class="interactive-learn-el">
+            <h4>Count in binary</h4>
+            <div>Binary (base-2) Value: 
+                <div id="binary-counter">0</div>
+            </div>
+            <div>Decimal (base-10) Value: 
+                <div id="decimal-counter">0</div>
+            </div>
+            <button id="counter-btn">+1</button>
+        </div>
+
+        <p>
+            Computers use binary because they work with tiny switches called transistors. These transistors can be in two states: 
+            off or on, which corresponds to the binary numbers 0 and 1. Since computers are made up of these switches, they 
+            operate using binary numbers.
+        </p>
+        <h2>What is unicode?</h2>
+        <p>
+            Binary numbers are great for computers, but what if we want to use letters, numbers, or symbols? That's where Unicode 
+            comes in. Unicode is like a big dictionary that matches numbers with different characters. Unicode helps computers understand 
+            and display all the different characters we use in our writing.
+        </p>
+        <div class="interactive-learn-el">
+            <h4>Enter a letter or number to see its Unicode value</h4>
+            <input id="unicode-converter" type="text" maxlength="1" /> Unicode decimal value: <div id="unicode-value">-</div>
+        </div>
+        <h2>So how does 'BULBS' work?</h2>
+        <p>
+            When you type in a message on the <a class="external-link" href="/">"text to binary"</a> page, that message gets sent to the server where each letter (or symbol 
+            or number or emoji) is converted to its base-10 Unicode value. That base-10 value is then converted to its binary equivalent
+            where it is output to your screen. On the <a class="external-link" href="/decode">"binary to text"</a> page, the same process happens in reverse.  It's a fun way to explore 
+            and understand how binary and Unicode work together!
+        </p>
+    </div>
+    <script src="{{ url_for('static', filename='/learn.js') }}"></script>
 {% endblock %}
