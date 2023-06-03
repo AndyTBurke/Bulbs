@@ -8,6 +8,8 @@ def index():
         message = request.form.get("message")
         if not message:
             return render_template("index.html", error="Error: message field is empty")
+        if len(message) > 1200:
+            return render_template("index.html", error="Error: message is too long")
         message_unicode = []
         for letter in message:
             message_unicode.append(ord(letter))
@@ -34,6 +36,8 @@ def decode():
         message_unicode_arr = []
         if not message_binary:
             return render_template("binary_to_text.html", error="Error: message field is empty")
+        if len(message_binary) > 25000:
+            return render_template("binary_to_text.html", error="Error: message too long")
         try: 
             for binary in message_binary_arr:
                 message_unicode_arr.append(int(binary, 2))
