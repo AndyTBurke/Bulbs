@@ -11,15 +11,26 @@
     <header>
       <nav>
         <ul>
-          <li><a href="/">TEXT TO BINARY</a></li>
-          <li><a href="/decode">BINARY TO TEXT</a></li>
-          <li><a href="/learn">HOW IT WORKS</a></li>
-          <li><a href="/about">ABOUT</a></li>
+          <li><a href="/" id="home-link">TEXT TO BINARY</a></li>
+          <li><a href="/decode" id="decode-link">BINARY TO TEXT</a></li>
+          <li><a href="/learn" id="learn-link">HOW IT WORKS</a></li>
+          <li><a href="/about" id="about-link">ABOUT</a></li>
         </ul>
       </nav>
     </header>
     <div id="content">
       {% block content %}{% endblock %}
     </div>
+    <script>
+      const currentPath = window.location.pathname.slice(1)
+      if (!currentPath) {
+        document.getElementById('home-link').style.textDecoration = "underline"
+        document.getElementById('home-link').style.color = "#5A5A5A"
+      } else {
+        document.getElementById(`${currentPath}-link`).style.textDecoration = "underline"
+        document.getElementById(`${currentPath}-link`).style.color = "#5A5A5A"
+      }
+      console.log(currentPath)
+    </script>
   </body>
 </html>
