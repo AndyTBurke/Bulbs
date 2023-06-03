@@ -9,9 +9,19 @@
             maxlength="1000" 
             autofocus name="message" 
             placeholder="Write a message"></textarea>
-        <button>OUTPUT TO BINARY</button>
+        <button class="output-btn">OUTPUT TO BINARY</button>
     </form>
     {% if message %}
+    <div id="output-option-div">
+        <div>
+            <input type="radio" id="bulbs" name="output-option" value="bulbs" checked>
+            <label for="bulbs">Bulbs</label>
+        </div>
+        <div>
+            <input type="radio" id="nums" name="output-option" value="nums">
+            <label for="nums">0s and 1s</label>
+        </div>
+    </div>
     <button id="copy-btn">COPY BINARY TO CLIPBOARD</button>
     <div class="message-div" id="binary-message">{{message}}</div>
     <script src="{{ url_for('static', filename='/index.js') }}"></script>

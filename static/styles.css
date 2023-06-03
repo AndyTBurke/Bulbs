@@ -144,3 +144,44 @@ form {
     color:#b30303;
     font-weight: bold;
 }
+
+.output-btn {
+    margin-top: 1em;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E6C800;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    width: 20em;
+    text-shadow: 0 0 10px gray;
+}
+
+.output-btn:hover {
+    background-color: #968702;
+}
+
+.output-btn:active {
+    background-color: #807700;
+}
+
+#output-option-div {
+    background-color: #d3d3d3;
+    width: 20em;
+    padding: .5em 0;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#bulbs, #nums {
+    cursor: pointer;
+}
