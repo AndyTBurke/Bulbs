@@ -9,7 +9,10 @@
             placeholder="Input binary message"></textarea>
         <button class="output-btn">OUTPUT TO PLAIN TEXT</button>
     </form>
+    {% if message %}
+    <h4 id="message-header">MESSAGE:</h4>
     <div class="message-div">{{message}}</div>
+    {% endif %}
     {% if error %}
     <p class="error-message">{{error}}</p>
     {% endif %}
