@@ -196,3 +196,68 @@ form {
     font-size: small;
     margin: 0;
 }
+
+@media (max-width: 780px) {
+
+    h1 {
+        font-size: 3.8em;
+    }
+
+    .sub-text {
+        max-width: 70%;
+    }
+
+    .message-div {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav > ul {
+        flex-direction: column;
+    }
+
+    nav > ul > li {
+        margin: .2em 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+}
+
+@media (max-width: 470px) {
+    h1 {
+        font-size: 2.1em;
+    }
+
+    textarea {
+        max-width: 300px;
+        height: 20em;
+    }
+
+    ul {
+        padding-right: 2em;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        width: 80%;
+    }
+
+    textarea {
+        max-width: 200px;
+    }
+
+    button {
+        max-width: 200px;
+    }
+
+}
