@@ -8,9 +8,19 @@
         <textarea
             maxlength="1000" 
             autofocus name="message" 
-            placeholder="Write a message"></textarea>
+            placeholder="Write a message"
+            id="input-text-area"></textarea>
+        <div id="char-used-div"><span id="char-used">0</span>/1000 character limit</div>
         <button class="output-btn">OUTPUT TO BINARY</button>
     </form>
+    <script>
+        const charsUsedEl = document.getElementById('char-used')
+        document.getElementById('input-text-area').addEventListener('input', () => updateCharCounter())
+        function updateCharCounter() {
+            const textAriaCharNum = document.getElementById('input-text-area').value.length
+            charsUsedEl.innerText = textAriaCharNum
+        }
+    </script>
     {% if message %}
     <div id="output-option-div">
         <div>
