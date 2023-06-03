@@ -6,6 +6,8 @@ app = Flask(__name__)
 def index():
     if request.method == 'POST':
         message = request.form.get("message")
+        if not message:
+            return render_template("index.html", error="Error: message field is empty")
         message_unicode = []
         for letter in message:
             message_unicode.append(ord(letter))
@@ -30,6 +32,8 @@ def decode():
         message_binary = request.form.get("message").replace("🟡", "1").replace("⚫", "0")
         message_binary_arr = message_binary.split(" ")
         message_unicode_arr = []
+        if not message_binary:
+            return render_template("binary_to_text.html", error="Error: message field is empty")
         try: 
             for binary in message_binary_arr:
                 message_unicode_arr.append(int(binary, 2))
