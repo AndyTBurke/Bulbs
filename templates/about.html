@@ -4,9 +4,9 @@
     <h1>💡 ABOUT 💡</h1>
     <h2>Welcome to the BULBS web app!</h2>
     <div id="about-info" class="text-container">
-    <p>This web app was developed as part of my CS50x final project! The idea for this app was inspired by the "Bulbs" homework assignment from CS50x. This web app is designed to help you transform text messages into captivating patterns of bulbs using binary code, providing an interactive learning experience along the way.</p>
+    <p>This web app was developed as part of my <a href="https://cs50.harvard.edu/x/2023/" class="external-link" target="_blank">CS50x</a> final project! The idea for this app was inspired by the course's <a href="https://cs50.harvard.edu/x/2023/psets/2/bulbs/" class="external-link" target="_blank">"Bulbs" homework assignment</a>. This web app is designed to help you transform text messages into captivating patterns of bulbs using binary code, providing <a href="/learn" class="external-link">an interactive learning experience</a> along the way.</p>
 
-    <h2>How does it work?</h2>
+    <h2>Basic Functionality</h2>
     <ol>
       <li>
         <strong>Input your text message:</strong> Simply enter the desired text into our user-friendly interface.
@@ -15,16 +15,13 @@
         <strong>Conversion process:</strong> Behind the scenes, the Flask backend takes each character of your message and converts it into its corresponding unicode value.
       </li>
       <li>
-        <strong>Binary encoding:</strong> The unicode values are then transformed into an 8-bit binary representation, creating a unique binary message.
-      </li>
-      <li>
-        <strong>Visual representation:</strong> Each 0 and 1 in the binary message corresponds to the state of an individual bulb. As the binary message unfolds, the bulbs light up or remain dim, creating an intriguing pattern.
+        <strong>Binary encoding:</strong> The unicode values are then transformed into its binary representation, creating a unique binary message.
       </li>
     </ol>
   
     <h2>Decode Binary Messages</h2>
     <p>
-      In addition to encoding text messages into binary patterns, our web app allows you to decode received binary messages back into plain text. If you have received a mesmerizing binary pattern, simply navigate to the Decode page and input the binary message. Our app will convert it back into meaningful text for you to decipher.
+      In addition to encoding text messages into binary patterns, this web app allows you to decode received binary messages back into plain text. If you have received a mesmerizing binary pattern, simply navigate to <a href="/decode" class="external-link">the Decode page</a> and input the binary message. Our app will convert it back into plain text.
     </p>
   
     <h2>The Vision</h2>
@@ -32,6 +29,6 @@
       My goal for this app is to make learning about binary code fun and accessible. I hope that visual representations and interactive experiences can enhance the learning process, enabling you to grasp complex concepts with ease. Whether you're a student, a technology enthusiast, or simply curious about binary, our web app is here to inspire and educate.
     </p>
   
-    <p><a class="external-link" href="https://github.com/AndyTBurke/Bulbs">Click here to view the source code.</a></p>
+    <p><a class="external-link" href="https://github.com/AndyTBurke/Bulbs" target="_blank">Click here to view the source code.</a></p>
 </div>
 {% endblock %}
