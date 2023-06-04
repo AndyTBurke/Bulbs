@@ -3,6 +3,9 @@
 #### Description:
 This web app is designed to help you transform text messages into captivating patterns of bulbs using binary code, providing an interactive learning experience along the way.
 
+##### Live demo link
+https://andytburke.pythonanywhere.com/
+
 ##### Basic Functionality
 1. Input your text message: Simply enter the desired text into our user-friendly interface.
 2. Conversion process: Behind the scenes, the Flask backend takes each character of your message and converts it into its corresponding unicode value.
