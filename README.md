@@ -1,5 +1,5 @@
 # BULBS
-#### Video Demo:  TODO
+#### Video Demo:  https://www.youtube.com/watch?v=xgdxhAwiJw0
 #### Description:
 This web app is designed to help you transform text messages into captivating patterns of bulbs using binary code, providing an interactive learning experience along the way.
 
