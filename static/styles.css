@@ -72,6 +72,7 @@ form {
     margin: 1em 0;
     max-width: 40em;
     text-align: justify;
+    overflow-wrap: break-word;
 }
 
 #copy-btn {
